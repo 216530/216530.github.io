@@ -1,0 +1,313 @@
+/* ID "principal" é o id para o body inteiro da pagina index */
+#principal {
+    background-color: black;
+    color: crimson;
+    background-image: url("../.././img/end-of-evangelion.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw auto;
+    background-position: center top;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+/* "teoe é o id do segundo titulo do index" */
+#teoe {
+    justify-content: center;
+    display: flex;
+}
+
+#sticky {
+    position: sticky;
+    justify-content: space-around;
+    top: 0%;
+    padding: 5px;
+    background-color: black;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    display: flex;
+}
+
+.links { 
+    display: flex; 
+    justify-content: space-around;
+    top: 0px;
+    padding: 5px;
+    background-color: black;
+    border: 2px solid aqua;
+    border-radius: 10px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: -30px;
+}
+
+.descricao {
+    width: 50%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.img_esq, .img_dir {
+    width: 300px;
+}
+
+#img_embaixo {
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+.footer {
+    top: 0%;
+    bottom: 0%;
+    padding: 3px;
+    background-color: black;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    margin-top: auto;
+}
+
+/* keyframes é o css para as letras rgb animadas em algumas frases do site */
+
+@keyframes efeitoRGB {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+
+    33% {
+        color: rgb(0, 255, 0);
+    }
+
+    66% {
+        color: rgb(0, 0, 255);
+    }
+
+    100% {
+        color: rgb(255, 0, 0);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+#secundario {
+    background-color: rgb(0, 0, 0);
+    color: crimson;
+    background-image: url("../.././img/Malenia.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+
+#sticky2 {
+    position: sticky;
+    top: 0px;
+    padding: 3px;
+    background-color: black;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    height: 50px;
+}
+
+.links2 {    
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 50px;
+    z-index: 999;
+    padding: 3px;
+    background-color: black;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;                      
+    width: 100%;                  
+    margin: 0 auto;                 
+}
+#conteudo{
+    width: 80%;                    
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#conteudo2{
+width: 80%;                    
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#texto_foto_eu{
+    display: flex;
+    justify-content: center;
+}
+#eu_e_amigo{
+    display: flex;
+    justify-content: center;
+}
+
+#animais{
+    display: flex;
+    justify-content: center;
+}
+
+
+a {
+    color: aqua;
+    text-decoration: rgb(208, 255, 0);
+
+}
+
+.textfontgoogle {
+    display: flex;
+    justify-content: center;
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: efeitoRGB 5s linear infinite;
+    align-items: center;
+}
+
+
+
+
+/* CSS para a parte das musicas da 3 pagina abaixo */
+
+
+#musicas {
+    background-image: url("../.././img/vpw.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: crimson;
+}
+
+#conteudo3, #music{
+width: 100%;                    
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#isaac {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    border-radius: 10px;
+
+}
+
+
+
+/* iframe é o css das musicas do spotify */
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS para a 4 pagina de contato do site abaixo */
+
+#contato {
+    background-image: url("../../img/Dark_souls.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw auto;
+    background-position: center top;
+    color: blanchedalmond;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Css para a pagina de formulario de cadastro linkado na 1 pagina do site */
+
+#cadastro {
+    background-image: url("../.././img/psicodelico.gif");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+}
+
+#botao_hover{
+    display: none;
+}
+
