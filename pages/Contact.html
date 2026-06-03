@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -12,28 +12,86 @@
 </head>
 
 <body id="contato">
-    <header>
-        <li><a href="../Index.html"> Clique aqui se deseja retornar a pagina principal</a> </li>
-        <nav>
-            <h1>Como me Contatar</h1>
-            <h3>Contatos padrões</h3>
-            <li><img src="../assets/phone.png" width=17 height=17><a href="https://wa.me/+5554984111072"
-                    target="_blank">(+55) 54 984111072 </a><br>Qualquer coisa só me ligar ou chamar no whatsapp.</li>
-            <hr width="450px" align="Left">
-            <li><img src="../assets/mail.png" widht=17 height=17><a href="https://mail.google.com"
-                    target="_blank">rafa2007Oliveira@gmail.com</a><br>Meu Email esta aberto para contato.</li>
-            <hr width="450px" align="Left">
-            <li><img src="../assets/insta.png" width=17 height=17><a href=https://www.instagram.com/garcia_de_oliveira0713/
-                    target="_blank">
-                    garcia_de_oliveira0713</a><br>Me sigam no Instagram!</li>
-            <hr width="450px" align="Left">
-            <h3>Email Faculdade</h3>
-            <li><a> <img src="../assets/mail.png" widht=17 height=17 href="https://mail.google.com"
-                        target="_blank">216530@upf.br</a></li>
-            <hr width="450px" align="Left">
-            <img src="../assets/denji-dance.gif"><img src="../assets/chainsaw-man-asa-mitaka.png" width="300" height="300">
-        </nav>
+    <header id="sticky2">
+        <h1 class="textfontgoogle">Como me Contatar</h1>
     </header>
+
+    <nav aria-label="Navegação secundária">
+        <ul class="links2">
+            <li><a href="../Index.html">Retornar ao inicio</a></li>
+        </ul>
+    </nav>
+
+    <main id="conteudo4">
+        <section aria-label="Contatos principais">
+            <h1>Contatos padrões</h2>
+                <ul>
+                    <li>
+                        <img src="../assets/phone.png" width="17" height="17" alt="Ícone de telefone">
+                        <a href="https://wa.me/+5554984111072" target="_blank">(+55) 54 984111072</a><br>
+                        Qualquer coisa só me ligar ou chamar no whatsapp.
+                    </li>
+                    <hr width="450px" align="Left">
+                    <li>
+                        <img src="../assets/mail.png" width="17" height="17" alt="Ícone de e-mail">
+                        <a href="https://mail.google.com" target="_blank">rafa2007Oliveira@gmail.com</a><br>
+                        Meu Email esta aberto para contato.
+                    </li>
+                    <hr width="450px" align="Left">
+                    <li>
+                        <img src="../assets/insta.png" width="17" height="17" alt="Ícone do Instagram">
+                        <a href="https://www.instagram.com/garcia_de_oliveira0713/"
+                            target="_blank">garcia_de_oliveira0713</a><br>
+                        Me sigam no Instagram!
+                    </li>
+                    <hr width="450px" align="Left">
+                </ul>
+        </section>
+
+        <section aria-label="Email da faculdade">
+            <h2>Email Faculdade</h2>
+            <ul>
+                <li>
+                    <img src="../assets/mail.png" width="17" height="17" alt="Ícone de e-mail">
+                    <a href="https://mail.google.com" target="_blank">216530@upf.br</a>
+                </li>
+            </ul>
+        </section>
+        
+        <hr width="450px" align="center"
+        
+        <section aria-label="Github">
+            <h2>Meu Github</h2>
+            <ul>
+                <li>
+                    <img src="../assets/github.png" width="17" height="17" alt="Ícone do Github">
+                    <a href="https://github.com/216530" target="_blank">216530Upf</a><br>
+                </li>
+            </ul>
+        </section>
+        <hr width="450px" align="center">
+        <section aria-label="Formulário de contato">
+            <h2>Ou me manda uma mensagem:</h2>
+            <form id="formContato">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Seu email">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+
+
+                <br><br>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+
+    </main>
 </body>
 
 </html>

@@ -1,50 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Rafael</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
     <link href="./pages/css/css-principal.css" rel="stylesheet">
 </head>
+
 <body id="principal">
     <header>
-        <h1 class="textfontgoogle" id="sticky" >Bom dia, Boa Tarde ou Boa Noite!</h1>
+        <h1 class="textfontgoogle" id="sticky">Bom dia, Boa Tarde ou Boa Noite!</h1>
     </header>
-        <nav>
+
+    <nav aria-label="Navegação principal">
         <ul class="links">
-            <a href="./pages/About.html">Um pouco sobre mim</a>
-            <a href="./pages/Lyrics.html">Minhas Musicas favoritas</a>
-            <a href="./pages/Contact.html">Como entrar em contato comigo</a>
+            <li><a href="./pages/About.html">Um pouco sobre mim</a></li>
+            <li><a href="./pages/Lyrics.html">Minhas Musicas favoritas</a></li>
+            <li><a href="./pages/Contact.html">Como entrar em contato comigo</a></li>
+            <li><a href="./pages/Curriculum.html">Curriculo Profissinal</a></li>
+            <li><a href="./pages/receitas.html">Minhas Receitas favoritas</a></li>
         </ul>
-        </nav>
+    </nav>
+
     <main>
         <article>
-            <h1 id="teoe">𝕿𝖍𝖊 𝖊𝖓𝖉 𝖔𝖋 𝖊𝖛𝖆𝖓𝖌𝖊𝖑𝖎𝖔𝖓</h1>
+            <h2 id="teoe">𝕿𝖍𝖊 𝖊𝖓𝖉 𝖔𝖋 𝖊𝖛𝖆𝖓𝖌𝖊𝖑𝖎𝖔𝖓</h2>
             <div class="conteudo">
-                <img class="img_esq" src="./assets/rei_esquerda.gif">
-                <div class="descricao">
-                    <br><hr>
-                    <h3><br>Um Bom dia queridos leitores, bem vindos ao meu Blog pessoal, aqui quem fala é o Rafael
-                        Estudante
-                        de
-                        ADS da universidade UPF Passo Fundo,
+                <img class="img_esq" src="./assets/rei_esquerda.gif" alt="Rei Ayanami olhando para a esquerda">
+                <section class="descricao">
+                    <hr>
+                    <p><br>Um Bom dia queridos leitores, bem vindos ao meu Blog pessoal, aqui quem fala é o Rafael
+                        Estudante de ADS da universidade UPF Passo Fundo,
                         aqui vai ser um pequeno espaço para eu testar minhas habilidades de codagem e tambem conter a
-                        minha
-                        cara,
+                        minha cara,
                         se quiserem saber mais sobre mim e meus gostos eu proporcionei 3 links no topo da pagina é so
-                        acessarem</h3><br><br><hr>
-                        <img id="img_embaixo" src="./assets/remember.gif" alt="you are(not) alone">
-                </div>
-                <img class="img_dir" src="./assets/rei.gif">
+                        acessarem</p><br>
+                    <hr>
+                    <img id="img_embaixo" src="./assets/remember.gif" alt="You are(not) alone">
+                </section>
+                <img class="img_dir" src="./assets/rei.gif" alt="Rei Ayanami">
+            </div>
         </article>
-        <BR><BR><BR>
-        </footer>
+        <br><br><br>
     </main>
-    <footer class="footer">
-        <ul>
-            <a href="./pages/Formulario de cadastro.html" target="_blank"> FORMULARIO PARA REALIZAR O CADASTRO
-                DO SEU NOVO PC GAMER (cuidado com os olhos)</a>
+    <footer>
+        <h2
+            style="text-align: center; width: fit-content; margin: 0 auto; padding: 5px 20px;border: 2px solid aqua; border-radius: 10px; background-color: rgba(0, 0, 0, 0.5);">Últimas Postagens</h2>
+        <br>
+        <section aria-label="Últimas postagens" class="footer section">
+            <br>
+            <article class="footer article">
+                <h3>Minhas músicas favoritas</h3>
+                <p>Confira minhas top 5 músicas mais insanas do planeta!</p>
+                <a href="./pages/Lyrics.html">Ler mais</a>
+            </article>
+            <article class="footer article">
+                <h3>Um pouco sobre mim</h3>
+                <p>Saiba mais sobre minha jornada na programação e meus gostos.</p>
+                <a href="./pages/About.html">Ler mais</a>
+            </article>
+        </section>
+    </footer>
 </body>
+
 </html>

@@ -1,7 +1,7 @@
 /* ID "principal" é o id para o body inteiro da pagina index */
 #principal {
     background-color: black;
-    color: crimson;
+    color: blanchedalmond;
     background-image: url("../.././assets/end-of-evangelion.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -30,8 +30,8 @@
     display: flex;
 }
 
-.links { 
-    display: flex; 
+.links {
+    display: flex;
     justify-content: space-around;
     top: 0px;
     padding: 5px;
@@ -56,7 +56,8 @@
     border-radius: 10px;
 }
 
-.img_esq, .img_dir {
+.img_esq,
+.img_dir {
     width: 300px;
 }
 
@@ -66,17 +67,42 @@
 
 }
 
-
 .footer {
     top: 0%;
     bottom: 0%;
     padding: 3px;
-    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+}
+
+.footer section {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    justify-content: space-around;
+   
+}
+
+
+.footer article {
+    top: 0%;
+    bottom: 0%;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid aqua;
     border-radius: 10px;
-    justify-content: center;
     display: flex;
-    margin-top: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: 35%;
+    text-align: center;
+    align-self: stretch;
+
 }
 
 /* keyframes é o css para as letras rgb animadas em algumas frases do site */
@@ -111,7 +137,7 @@
 
 #secundario {
     background-color: rgb(0, 0, 0);
-    color: crimson;
+    color: blanchedalmond;
     background-image: url("../.././assets/Malenia.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -134,7 +160,7 @@
     height: 50px;
 }
 
-.links2 {    
+.links2 {
     display: flex;
     justify-content: space-around;
     position: fixed;
@@ -147,39 +173,41 @@
     list-style: none;
 }
 
-.container{
+.container {
     display: flex;
-    justify-content: space-between; 
-    gap: 20px;                      
-    width: 100%;                  
-    margin: 0 auto;                 
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
 }
-#conteudo{
-    width: 80%;                    
+
+#conteudo {
+    width: 80%;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
-#conteudo2{
-width: 80%;                    
+#conteudo2 {
+    width: 80%;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
-#texto_foto_eu{
-    display: flex;
-    justify-content: center;
-}
-#eu_e_amigo{
+#texto_foto_eu {
     display: flex;
     justify-content: center;
 }
 
-#animais{
+#eu_e_amigo {
+    display: flex;
+    justify-content: center;
+}
+
+#animais {
     display: flex;
     justify-content: center;
 }
@@ -212,11 +240,12 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: crimson;
+    color: blanchedalmond;
 }
 
-#conteudo3, #music{
-width: 100%;                    
+#conteudo3,
+#music {
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
@@ -275,15 +304,28 @@ iframe {
 /* CSS para a 4 pagina de contato do site abaixo */
 
 #contato {
-    background-image: url("../.././assets/Dark_souls.gif");
+    background-image: url("../.././assets/bloodborne.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100vw auto;
+    background-size: cover;
     background-position: center top;
+    min-height: 100vh;
     color: blanchedalmond;
 }
 
-
+#conteudo4 {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
 
 
 
@@ -307,7 +349,6 @@ iframe {
 
 }
 
-#botao_hover{
+#botao_hover {
     display: none;
 }
-
