@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,34 +9,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
 </head>
-
 <body id="musicas">
     <header id="sticky2">
         <h1 class="textfontgoogle">Top 5 Musicas Mais Insanas do Planeta Terra WOW!!!</h1>
     </header>
-
     <nav aria-label="Navegação secundária">
         <ul class="links2">
             <li><a href="../Index.html">Retornar ao inicio</a></li>
         </ul>
     </nav>
-
     <main id="conteudo3">
         <figure>
             <img id="isaac" src="../assets/nero.gif" width="300" height="300"
                 alt="Personagem Nero de Devil May Cry dançando">
         </figure>
-
-        <article id="music">
+        <article class="music">
             <h2>Primeira Musica INSANAAA!!!!</h2>
             <h3>Musica 1</h3>
             <iframe data-testid="embed-iframe" style="border-radius:12px"
                 src="https://open.spotify.com/embed/track/6W21LNLz9Sw7sUSNWMSHRu?utm_source=generator&theme=0"
-                width="90%" height="352" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
-                title="Hybrid Moments - Misfits no Spotify"></iframe>
+                width="100%" height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
             <br>
-            <h4>Um pedaço da letra de "Hybrid Moments" feita por "Misfits"</h4>
+            <h4>Um pedaço da letra de "Freak on a Leash" feita por "Korn"</h4>
             <blockquote>
                 <p>
                     Sometimes, I cannot feel my face<br>
@@ -49,8 +44,7 @@
                 </p>
             </blockquote>
         </article>
-
-        <article id="music">
+        <article class="music">
             <h3>Musica 2</h3>
             <iframe data-testid="embed-iframe" style="border-radius:12px"
                 src="https://open.spotify.com/embed/track/4EchqUKQ3qAQuRNKmeIpnf?utm_source=generator&theme=0"
@@ -74,8 +68,7 @@
                 </p>
             </blockquote>
         </article>
-
-        <article id="music">
+        <article class="music">
             <h3>Musica 3</h3>
             <iframe data-testid="embed-iframe" style="border-radius:12px"
                 src="https://open.spotify.com/embed/track/02xhLoVqpGmOqvolgrwM8w?utm_source=generator&theme=0"
@@ -105,8 +98,7 @@
                 </p>
             </blockquote>
         </article>
-
-        <article id="music">
+        <article class="music">
             <h3>Musica 4</h3>
             <iframe data-testid="embed-iframe" style="border-radius:12px"
                 src="https://open.spotify.com/embed/track/5OjCsHeByDYEGxMrb1z8KQ?utm_source=generator" width="90%"
@@ -126,8 +118,7 @@
                 </p>
             </blockquote>
         </article>
-
-        <article id="music">
+        <article class="music">
             <h3>Musica 5 Final!!</h3>
             <iframe data-testid="embed-iframe" style="border-radius:12px"
                 src="https://open.spotify.com/embed/track/6VS4C2HnOQPivcjcAAlUMj?utm_source=generator" width="90%"
@@ -135,8 +126,7 @@
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                 title="Somewhere I Belong - Linkin Park no Spotify"></iframe>
             <br>
-            <h4>Essa é outra das minhas favoritas, aqui vai a letra de "Somewhere i belong" de "Linkin Park"</h4>
-            <hr>
+            <h4>Essa é outra das minhas favoritas, aqui vai a letra de "Sonne" de "Rammstein"</h4>
             <blockquote>
                 <p>
                     Lá vem o SolHier kommt die Sonne<br>
@@ -147,9 +137,13 @@
                     Lá vem o SolHier kommt die Sonne
                 </p>
             </blockquote>
-            <hr>
         </article>
     </main>
+    <button id="btn-tema" class="btn-flutuante" onclick="alternarTema()">𝕷𝖎𝖌𝖍𝖙 𝕿𝖍𝖊𝖒𝖊</button>
+    <div id="controle-fonte">
+        <button class="btn-fonte" onclick="diminuirFonte()">A-</button>
+        <button class="btn-fonte" onclick="aumentarFonte()">A+</button>
+    </div>
+    <script src="./JS/main.js"></script>
 </body>
-
 </html>

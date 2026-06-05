@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
     <link href="./pages/css/css-principal.css" rel="stylesheet">
 </head>
-
 <body id="principal">
     <header>
         <h1 class="textfontgoogle" id="sticky">Bom dia, Boa Tarde ou Boa Noite!</h1>
     </header>
-
     <nav aria-label="Navegação principal">
         <ul class="links">
             <li><a href="./pages/About.html">Um pouco sobre mim</a></li>
             <li><a href="./pages/Lyrics.html">Minhas Musicas favoritas</a></li>
             <li><a href="./pages/Contact.html">Como entrar em contato comigo</a></li>
-            <li><a href="./pages/Curriculum.html">Curriculo Profissinal</a></li>
+            <li><a href="./pages/Curriculum.html">Curriculo Profissional</a></li>
             <li><a href="./pages/receitas.html">Minhas Receitas favoritas</a></li>
         </ul>
     </nav>
-
     <main>
         <article>
             <h2 id="teoe">𝕿𝖍𝖊 𝖊𝖓𝖉 𝖔𝖋 𝖊𝖛𝖆𝖓𝖌𝖊𝖑𝖎𝖔𝖓</h2>
@@ -37,7 +33,7 @@
                         Estudante de ADS da universidade UPF Passo Fundo,
                         aqui vai ser um pequeno espaço para eu testar minhas habilidades de codagem e tambem conter a
                         minha cara,
-                        se quiserem saber mais sobre mim e meus gostos eu proporcionei 3 links no topo da pagina é so
+                        se quiserem saber mais sobre mim e meus gostos eu proporcionei 5 links no topo da pagina é so
                         acessarem</p><br>
                     <hr>
                     <img id="img_embaixo" src="./assets/remember.gif" alt="You are(not) alone">
@@ -65,6 +61,15 @@
             </article>
         </section>
     </footer>
-</body>
+    <!-- Botão de Tema -->
+    <button id="btn-tema" class="btn-flutuante" onclick="alternarTema()">𝕷𝖎𝖌𝖍𝖙 𝕿𝖍𝖊𝖒𝖊</button>
 
+    <!-- Botões de Fonte -->
+    <div id="controle-fonte">
+        <button class="btn-fonte" onclick="diminuirFonte()">A-</button>
+        <button class="btn-fonte" onclick="aumentarFonte()">A+</button>
+    </div>
+
+    <script src="./pages/JS/main.js"></script>
+</body>
 </html>

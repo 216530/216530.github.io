@@ -86,12 +86,22 @@
 
                 <br><br>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" onclick="return validarFormulario()">Enviar</button>
 
             </form>
         </section>
 
     </main>
+    <!-- Botão de Tema -->
+    <button id="btn-tema" class="btn-flutuante" onclick="alternarTema()">𝕷𝖎𝖌𝖍𝖙 𝕿𝖍𝖊𝖒𝖊</button>
+
+    <!-- Botões de Fonte -->
+    <div id="controle-fonte">
+        <button class="btn-fonte" onclick="diminuirFonte()">A-</button>
+        <button class="btn-fonte" onclick="aumentarFonte()">A+</button>
+    </div>
+
+    <script src="./JS/main.js"></script>
 </body>
 
 </html>
