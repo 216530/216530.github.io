@@ -44,17 +44,18 @@
         <br><br><br>
     </main>
     <footer>
-        <h2
-            style="text-align: center; width: fit-content; margin: 0 auto; padding: 5px 20px;border: 2px solid aqua; border-radius: 10px; background-color: rgba(0, 0, 0, 0.5);">Últimas Postagens</h2>
+        <div class="titulo-postagens">
+        <h2>Últimas Postagens</h2>
+        </div>
         <br>
-        <section aria-label="Últimas postagens" class="footer section">
+        <section aria-label="Últimas postagens" class="postagens">
             <br>
-            <article class="footer article">
+            <article class="conteudo-postagens">
                 <h3>Minhas músicas favoritas</h3>
                 <p>Confira minhas top 5 músicas mais insanas do planeta!</p>
                 <a href="./pages/Lyrics.html">Ler mais</a>
             </article>
-            <article class="footer article">
+            <article class="conteudo-postagens">
                 <h3>Um pouco sobre mim</h3>
                 <p>Saiba mais sobre minha jornada na programação e meus gostos.</p>
                 <a href="./pages/About.html">Ler mais</a>
@@ -62,8 +63,8 @@
         </section>
     </footer>
     <button id="btn-tema" class="btn-flutuante" onclick="alternarTema()">𝕷𝖎𝖌𝖍𝖙 𝕿𝖍𝖊𝖒𝖊</button>
-
     <div id="controle-fonte">
+        <button id="btn-topo" onclick="voltarTopo()">↑</button>
         <button class="btn-fonte" onclick="diminuirFonte()">-</button>
         <button class="btn-fonte" onclick="aumentarFonte()">+</button>
     </div>

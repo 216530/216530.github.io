@@ -25,7 +25,7 @@
     top: 0%;
     padding: 5px;
     background-color: black;
-    border: 2px solid aqua;
+    border: 2px solid midnightblue;
     border-radius: 10px;
     display: flex;
 }
@@ -36,7 +36,7 @@
     top: 0px;
     padding: 5px;
     background-color: black;
-    border: 2px solid aqua;
+    border: 2px solid midnightblue;
     border-radius: 10px;
 }
 
@@ -54,6 +54,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    border: 2px solid darkslateblue;
 }
 
 .img_esq,
@@ -78,31 +79,37 @@
     width: 95%;
 }
 
-.footer section {
+.postagens {
     display: flex;
     flex-direction: row;
     gap: 5px;
     width: 100%;
-    justify-content: space-around;
-   
+    justify-content: center;
+
 }
 
+.titulo-postagens {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px 20px;
+    border: 2px solid midnightblue;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-.footer article {
+.conteudo-postagens {
     top: 0%;
     bottom: 0%;
     padding: 3px;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid aqua;
+    border: 2px solid midnightblue;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 5px;
-    width: 35%;
+    width: 25%;
     text-align: center;
-    align-self: stretch;
-
 }
 
 /* keyframes é o css para as letras rgb animadas em algumas frases do site */
@@ -152,7 +159,7 @@
     top: 0px;
     padding: 3px;
     background-color: black;
-    border: 2px solid aqua;
+    border: 2px solid thistle;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
@@ -168,7 +175,7 @@
     z-index: 999;
     padding: 3px;
     background-color: black;
-    border: 2px solid aqua;
+    border: 2px solid thistle;
     border-radius: 10px;
     list-style: none;
 }
@@ -187,6 +194,7 @@
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
+    border: 2px solid darkred;
 }
 
 #conteudo2 {
@@ -195,6 +203,7 @@
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
+    border: 2px solid darkred;
 }
 
 #texto_foto_eu {
@@ -214,7 +223,7 @@
 
 
 a {
-    color: aqua;
+    color: lavender;
     text-decoration: rgb(208, 255, 0);
 
 }
@@ -255,6 +264,7 @@ a {
     align-items: center;
     text-align: center;
     padding: 50px 20px;
+    border: 2px solid purple;
 }
 
 #isaac {
@@ -333,10 +343,9 @@ iframe {
 
 
 
+/* CSS para a pagina do curriculo  */
 
- /* CSS para a pagina do curriculo  */
-
- #curriculo {
+#curriculo {
     background-image: url("../../assets/wolf.gif") !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -345,7 +354,8 @@ iframe {
     min-height: 100vh;
     color: blanchedalmond;
 }
- #conteudo5{
+
+#conteudo5 {
     width: 50%;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0px;
@@ -357,7 +367,84 @@ iframe {
     align-items: center;
     text-align: center;
     padding: 50px 20px;
- }
+    border: 2px solid white;
+}
+
+
+
+
+
+
+/* css para a parte da pagina de receitas */
+
+#receitas {
+    background-image: url("../../assets/Niko.gif") !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+}
+
+.receitas-blocos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.bloco-receita {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    color: blanchedalmond;
+    text-align: left;
+    min-height: 400px;
+    align-self: stretch;
+    border: 2px solid purple;
+}
+
+.musse-maracuja {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+        border: 2px solid purple;
+        border-radius: 10px;
+}
+
+
+/* css para a pagina do mousse de maracuja divino */
+
+#maracuja{
+    background-image: url("../../assets/gandalf.gif") !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    color: blanchedalmond;
+}
+
+.conteudo-maracuja {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 50px 20px;
+    border: 2px solid white;
+    
+}
+
 
 .btn-flutuante {
     position: fixed;
@@ -365,8 +452,8 @@ iframe {
     right: 24px;
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.75);
-    color: aqua;
-    border: 2px solid aqua;
+    color: lavender;
+    border: 2px solid thistle;
     border-radius: 30px;
     padding: 10px 18px;
     font-size: 0.95rem;
@@ -374,11 +461,12 @@ iframe {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     font-family: inherit;
 }
+
 .btn-flutuante:hover {
     background-color: aqua;
     color: black;
 }
-   
+
 #controle-fonte {
     position: fixed;
     top: 8px;
@@ -387,10 +475,11 @@ iframe {
     display: flex;
     gap: 4px;
 }
+
 .btn-fonte {
     background-color: rgba(0, 0, 0, 0.75);
-    color: aqua;
-    border: 2px solid aqua;
+    color: lavender;
+    border: 2px solid thistle;
     border-radius: 8px;
     padding: 4px 10px;
     font-size: 0.85rem;
@@ -399,6 +488,7 @@ iframe {
     transition: background-color 0.2s, color 0.2s;
     font-family: inherit;
 }
+
 .btn-fonte:hover {
     background-color: aqua;
     color: black;
@@ -406,27 +496,31 @@ iframe {
 
 
 
-  
+
 body.tema-claro#principal {
     background-image: url("../../assets/evangelion_fundo_claro.gif") !important;
     background-color: #f0ede6;
     color: #1a1a1a;
 }
+
 body.tema-claro#secundario {
     background-image: url("../../assets/evangelion_fundo_claro.gif") !important;
     background-color: #f0ede6;
     color: #1a1a1a;
 }
+
 body.tema-claro#musicas {
     background-image: url("../../assets/evangelion_fundo_claro.gif") !important;
     background-color: #f0ede6;
     color: #1a1a1a;
 }
+
 body.tema-claro#contato {
     background-image: url("../../assets/evangelion_fundo_claro.gif") !important;
     background-color: #f0ede6;
     color: #1a1a1a;
 }
+
 body.tema-claro#cadastro {
     background-image: url("../../assets/evangelion_fundo_claro.gif") !important;
     background-color: #f0ede6;
@@ -437,73 +531,150 @@ body.tema-claro#curriculo {
     background-color: #f0ede6;
 }
 
+body.tema-claro#receitas {
+    background-image: url("../../assets/evangelion_fundo_claro.gif") !important;
+    background-color: #f0ede6;
+    color: #1a1a1a;
+}
+
+body.tema-claro#maracuja {
+    background-image: url("../../assets/evangelion_fundo_claro.gif") !important;
+    background-color: #f0ede6;
+    color: #1a1a1a;
+}
+
 body.tema-claro #sticky,
 body.tema-claro #sticky2 {
     background-color: rgba(255, 255, 255, 0.85) !important;
     border-color: #e67e22 !important;
     color: #1a1a1a !important;
 }
+
 body.tema-claro .links,
 body.tema-claro .links2 {
     background-color: rgba(255, 255, 255, 0.85) !important;
     border-color: #e67e22 !important;
 }
-body.tema-claro .footer article {
+
+body.tema-claro .titulo-postagens {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    border-color: #e67e22 !important;
+}
+
+body.tema-claro .conteudo-postagens {
     background-color: rgba(255, 255, 255, 0.75) !important;
     border-color: #e67e22 !important;
     color: #1a1a1a !important;
 }
+
+body.tema-claro .musse-maracuja {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    border-color: #e67e22 !important;
+    color: #1a1a1a !important;
+} 
+
+body.tema-claro .conteudo-maracuja {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    color: #1a1a1a !important;
+    border-color: #e67e22 !important;
+}
 body.tema-claro a {
     color: #c0392b;
 }
-body.tema-claro .descricao{
-        background-color: rgba(255, 255, 255, 0.75) !important;
-    color: #1a1a1a!important;
+
+body.tema-claro .descricao {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    color: #1a1a1a !important;
 }
 
-body.tema-claro #conteudo{
-    background-color: rgba(255, 255, 255, 0.75)!important;
-    color: #1a1a1a!important;
+body.tema-claro #conteudo {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    color: #1a1a1a !important;
 }
-body.tema-claro #conteudo2{
-        background-color: rgba(255, 255, 255, 0.75)!important;
-    color: #1a1a1a!important;
+
+body.tema-claro #conteudo2 {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    color: #1a1a1a !important;
 }
-body.tema-claro #conteudo3{
-    background-color: rgba(255, 255, 255, 0.75)!important;
-    color: #1a1a1a!important;
+
+body.tema-claro #conteudo3 {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    color: #1a1a1a !important;
 }
-body.tema-claro #music{
-    background-color: rgba(255, 255, 255, 0.75)!important;
-    color: #1a1a1a!important;
+
+body.tema-claro #music {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    color: #1a1a1a !important;
 }
+
 body.tema-claro #conteudo4 {
-    background-color: rgba(255, 255, 255, 0.75)!important;
-    color: #1a1a1a!important;
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    color: #1a1a1a !important;
 }
+
 body.tema-claro #conteudo5 {
-    background-color: rgba(255, 255, 255, 0.75)!important;
-    color: #1a1a1a!important;
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    color: #1a1a1a !important;
+    border-color: #e67e22 !important;
 }
+
+
+body.tema-claro .receitas-blocos {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    color: #1a1a1a !important;
+}
+
 body.tema-claro .textfontgoogle {
     color: #c0392b;
     animation: none;
 }
+
 body.tema-claro .btn-flutuante {
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255, 255, 255, 0.85);
     color: #c0392b;
     border-color: #e67e22;
 }
+
 body.tema-claro .btn-flutuante:hover {
     background-color: #e67e22;
     color: white;
 }
+
 body.tema-claro .btn-fonte {
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255, 255, 255, 0.85);
     color: #c0392b;
     border-color: #e67e22;
 }
+
 body.tema-claro .btn-fonte:hover {
     background-color: #e67e22;
     color: white;
+}
+
+#btn-topo {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: lavender;
+    border: 2px solid thistle;
+    border-radius: 30px;
+    padding: 10px 16px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: inherit;
+}
+
+#btn-topo:hover {
+    background-color: aqua;
+    color: black;
+}
+
+body.tema-claro #btn-topo {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #c0392b;
+    border-color: #e67e22;
 }

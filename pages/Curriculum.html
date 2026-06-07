@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Curriculo Profissional</title>
+    <title>Meu Currículo Profissional</title>
     <link href="./css/css-principal.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
 </head>
-
 <body id="curriculo">
     <header id="sticky2">
-        <h1 class="textfontgoogle">Meu Curriculo Profissional</h1>
+        <h1 class="textfontgoogle">Meu Currículo Profissional</h1>
     </header>
     <nav aria-label="Navegação secundária">
         <ul class="links2">
-            <li><a href="../Index.html">Retornar ao inicio</a></li>
+            <li><a href="../Index.html">Retornar ao início</a></li>
         </ul>
     </nav>
     <br><br><br>
     <main id="conteudo5">
         <section aria-label="Informações Pessoais">
-            <hr>
             <h2>Informações Pessoais</h2>
-            <ul>
-                <li><strong>Nome:</strong> Rafael Garcia de Oliveira</li>
-                <li><strong>Data de Nascimento:</strong> 13/07/2007</li>
-                <li><strong>Endereço:</strong>(Eu nao vou por meu endereço real XD)</li>
-            </ul>
-            
+            <hr>
+            <table>
+                <tr>
+                    <th><strong>Nome:</strong></th>
+                    <td>Rafael Garcia de Oliveira</td>
+                </tr>
+                <tr>
+                    <th><strong>Data de Nascimento:</strong></th>
+                    <td>13/07/2007</td>
+                </tr>
+                <tr>
+                    <td><strong>Endereço:</strong></td>
+                    <td>(Eu não vou colocar meu endereço real XD)</td>
+                </tr>
+            </table>
+            <hr>
         </section>
-            <section aria-label="Experiência Profissional">
-                <hr>
-                <h2>Experiência Profissional</h2>
-                <ul>
-                    <li><strong>Auxiliar Administrativo</strong> Hospital de Clinicas de Carazinho</li>
-                </ul>
-            </section>
-            <section aria-label="Formação Acadêmica">
-                <hr>
-                <h2>Formação Acadêmica</h2>
-                <ul>
-                    <li><strong>Cursando ADS</strong> - Universidade de Passo Fundo UPF</li>
-                    <li><strong>Ensino Médio Completo</strong> Escola Estadual de Ensino Basico Érico Veríssimo</li>
-                </ul>
-                <hr>
-            </section>
-            <section aria-label="Certificações">
-                <h2>Certificações</h2>
-                <ul>
-                    <li><strong>Auxiliar Veterinario</strong> - Uniwork Carazinho (2020 - 2022)</li>
-                </ul>
-                <hr>
-            </section>
-            <section aria-label="Idiomas">
-                <h2>Idiomas</h2>
-                <ul>
-                    <li><strong>Português:</strong> Nativo</li>
-                    <li><strong>Inglês:</strong> Intermediário</li>
-                </ul>
-            </section>
-            <section aria-label="Projetos Pessoais">
-                <hr>
-                <h2>Projetos Pessoais</h2>
-                <ul>
-                    <li><strong>Desenvolvimento Web</strong> Melhorar cada dia mais o meu site para a faculdade e
-                        desenvolvimento pessoal</li>
-                </ul>
-                <hr>
-            </section>
+        <section aria-label="Experiência Profissional">
+            <h2>Experiência Profissional</h2>
+            <ul>
+                <li><strong>Auxiliar Administrativo</strong> — Hospital de Clínicas de Carazinho</li>
+            </ul>
+        </section>
+        <section aria-label="Formação Acadêmica">
+            <hr>
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li><strong>Cursando ADS</strong> — Universidade de Passo Fundo (UPF)</li>
+                <li><strong>Ensino Médio Completo</strong> — Escola Estadual de Ensino Básico Érico Veríssimo</li>
+            </ul>
+            <hr>
+        </section>
+        <section aria-label="Certificações">
+            <h2>Certificações</h2>
+            <ul>
+                <li><strong>Auxiliar Veterinário</strong> — Uniwork Carazinho (2020 - 2022)</li>
+            </ul>
+            <hr>
+        </section>
+        <section aria-label="Idiomas">
+            <h2>Idiomas</h2>
+            <ul>
+                <li><strong>Português:</strong> Nativo</li>
+                <li><strong>Inglês:</strong> Intermediário</li>
+            </ul>
+        </section>
+        <section aria-label="Projetos Pessoais">
+            <hr>
+            <h2>Projetos Pessoais</h2>
+            <ul>
+                <li><strong>Desenvolvimento Web</strong> — Melhorar cada dia mais o meu site para a faculdade e desenvolvimento pessoal</li>
+            </ul>
+            <hr>
+        </section>
     </main>
-    <footer>
-    </footer>
+    <footer></footer>
+    <button id="btn-topo" onclick="voltarTopo()">↑</button>
     <button id="btn-tema" class="btn-flutuante" onclick="alternarTema()">𝕷𝖎𝖌𝖍𝖙 𝕿𝖍𝖊𝖒𝖊</button>
-
     <div id="controle-fonte">
         <button class="btn-fonte" onclick="diminuirFonte()">-</button>
         <button class="btn-fonte" onclick="aumentarFonte()">+</button>
     </div>
     <script src="./JS/main.js"></script>
 </body>
-
 </html>
